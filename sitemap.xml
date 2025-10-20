@@ -4,99 +4,145 @@
   <url>
     <loc>http://shthemw.gitee.io/contact/index.html</loc>
     
-    <lastmod>2025-10-16T08:43:29.322Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/notes/index.html</loc>
     
-    <lastmod>2025-10-16T08:43:13.958Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/talks/index.html</loc>
     
-    <lastmod>2025-10-16T08:43:00.000Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/cv/index.html</loc>
     
-    <lastmod>2025-10-16T08:42:45.370Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/projects/index.html</loc>
     
-    <lastmod>2025-10-16T08:42:26.424Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/publications/index.html</loc>
     
-    <lastmod>2025-10-16T08:42:01.964Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/tags/index.html</loc>
     
-    <lastmod>2025-10-16T02:41:36.453Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/photography/index.html</loc>
     
-    <lastmod>2025-10-16T02:41:36.308Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/categories/index.html</loc>
     
-    <lastmod>2025-10-16T02:41:36.085Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/archive/index.html</loc>
     
-    <lastmod>2025-10-16T02:41:36.084Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/about/index.html</loc>
     
-    <lastmod>2025-10-16T02:41:36.083Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://shthemw.gitee.io/2024/03/09/%25E6%2589%2593%25E9%2580%25A0%25E5%2585%25B7%25E6%259C%2589-Y%25E8%25BD%25B4-%25E7%259A%25842D-top-down%25E6%25B8%25B8%25E6%2588%258F/</loc>
+    <loc>http://shthemw.gitee.io/2024/03/09/%E6%89%93%E9%80%A0%E5%85%B7%E6%9C%89-Y%E8%BD%B4-%E7%9A%842D-top-down%E6%B8%B8%E6%88%8F/</loc>
     
-    <lastmod>2025-10-16T02:41:35.546Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://shthemw.gitee.io/2023/11/30/%25E6%25AC%25A2%25E8%25BF%258E/</loc>
+    <loc>http://shthemw.gitee.io/2023/11/30/%E6%AC%A2%E8%BF%8E/</loc>
     
-    <lastmod>2025-10-16T02:41:35.408Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://shthemw.gitee.io/404.html</loc>
     
-    <lastmod>2025-10-16T02:41:35.405Z</lastmod>
+    <lastmod>2025-10-16</lastmod>
     
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
+  
+
+  <url>
+    <loc>http://shthemw.gitee.io/</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://shthemw.gitee.io/tags/Unity/</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
   
 </urlset>
