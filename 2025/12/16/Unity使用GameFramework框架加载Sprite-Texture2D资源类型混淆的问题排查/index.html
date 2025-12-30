@@ -18,12 +18,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"shthemw.gitee.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"shthemw.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
     <meta name="description" content="前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 GameEntry.Resource.LoadAssetAsync&lt;T&gt;API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错: 123Exception: GameFrameworkException: Load asset &#x27;Assets&#x2F;Res&#x2F;U">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity使用GameFramework框架加载Sprite&#x2F;Texture2D资源类型混淆的问题排查">
-<meta property="og:url" content="http://shthemw.gitee.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/index.html">
+<meta property="og:url" content="http://shthemw.github.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/index.html">
 <meta property="og:site_name" content="Welcome to HanWen&#39;s Blog!">
 <meta property="og:description" content="前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 GameEntry.Resource.LoadAssetAsync&lt;T&gt;API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错: 123Exception: GameFrameworkException: Load asset &#x27;Assets&#x2F;Res&#x2F;U">
 <meta property="og:locale" content="zh_CN">
@@ -39,10 +39,10 @@
 <meta name="twitter:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20251216174309645.png">
 
 
-<link rel="canonical" href="http://shthemw.gitee.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
+<link rel="canonical" href="http://shthemw.github.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://shthemw.gitee.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/","path":"2025/12/16/Unity使用GameFramework框架加载Sprite-Texture2D资源类型混淆的问题排查/","title":"Unity使用GameFramework框架加载Sprite/Texture2D资源类型混淆的问题排查"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://shthemw.github.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/","path":"2025/12/16/Unity使用GameFramework框架加载Sprite-Texture2D资源类型混淆的问题排查/","title":"Unity使用GameFramework框架加载Sprite/Texture2D资源类型混淆的问题排查"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Unity使用GameFramework框架加载Sprite/Texture2D资源类型混淆的问题排查 | Welcome to HanWen's Blog!</title>
@@ -190,7 +190,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://shthemw.gitee.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
+    <link itemprop="mainEntityOfPage" href="http://shthemw.github.io/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://github.com/SHthemW.png">
