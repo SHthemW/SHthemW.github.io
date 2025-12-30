@@ -59,6 +59,7 @@
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
@@ -229,8 +230,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 <code>GameEntry.Resource.LoadAssetAsync&lt;T&gt;</code>API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception: GameFrameworkException: Load asset </span><br><span class="line">&#x27;Assets/Res/UI/UISprite/EnterGamePopup/Achievement/EGP_Achievement_Base_ChineseTraditional.png&#x27; </span><br><span class="line">failure load type is UnityEngine.Texture2D but asset type is UnityEngine.Sprite.</span><br></pre></td></tr></table></figure>
+          <p>前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 <code>GameEntry.Resource.LoadAssetAsync&lt;T&gt;</code>API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception: GameFrameworkException: Load asset </span><br><span class="line">&#x27;Assets/Res/UI/UISprite/EnterGamePopup/Achievement/EGP_Achievement_Base_ChineseTraditional.png&#x27; </span><br><span class="line">failure load type is UnityEngine.Texture2D but asset type is UnityEngine.Sprite.</span><br></pre></td></tr></table></figure></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2025/12/16/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/#more" rel="contents">
@@ -402,7 +402,7 @@
 <p>感谢点赞收藏的朋友们!   </p>
 </blockquote>
 <p>想象一座带有桥洞的小桥. 玩家先从左侧上桥, 再从右侧下桥, 最后从中间的桥洞走过去.</p>
-<p>这是一个很简单, 很常见的场景. 然而, 要在2D top-down视角的游戏中实现它却比想象中更复杂 –在桥上阻挡玩家跳下去的碰撞盒, 要如何才不会阻挡要穿过桥洞的玩家?</p>
+<p>这是一个很简单, 很常见的场景. 然而, 要在2D top-down视角的游戏中实现它却比想象中更复杂 —在桥上阻挡玩家跳下去的碰撞盒, 要如何才不会阻挡要穿过桥洞的玩家?</p>
 <p><img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/tit.png" alt="tit"></p>
           <!--noindex-->
             <div class="post-button">
@@ -522,6 +522,24 @@
     </span>
     <span class="author" itemprop="copyrightHolder">HanWen</span>
   </div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
