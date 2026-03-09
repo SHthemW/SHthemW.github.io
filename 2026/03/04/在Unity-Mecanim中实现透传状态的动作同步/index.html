@@ -43,7 +43,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305160746792.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305162522792.png">
 <meta property="article:published_time" content="2026-03-04T11:31:51.000Z">
-<meta property="article:modified_time" content="2026-03-06T03:49:21.175Z">
+<meta property="article:modified_time" content="2026-03-09T08:17:43.876Z">
 <meta property="article:author" content="HanWen">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305114052767.png">
@@ -146,7 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">基本介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%A1%88%E7%BB%86%E8%8A%82"><span class="nav-number">2.</span> <span class="nav-text">方案细节</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%8F%82%E6%95%B0%E8%BF%98%E6%98%AF%E7%8A%B6%E6%80%81"><span class="nav-number">2.1.</span> <span class="nav-text">同步参数还是状态?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%91%E9%80%81"><span class="nav-number">2.2.</span> <span class="nav-text">本地玩家数据的发送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8E%A5%E6%94%B6"><span class="nav-number">2.3.</span> <span class="nav-text">同步玩家数据的接收</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%82%80%E5%84%A1%E6%8E%A5%E6%94%B6%E7%AB%AF"><span class="nav-number">2.4.</span> <span class="nav-text">傀儡接收端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BF%9D%E6%8C%81"><span class="nav-number">2.5.</span> <span class="nav-text">数据的保持</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD"><span class="nav-number">3.</span> <span class="nav-text">高级功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%84%E8%A1%A8%E7%8E%B0"><span class="nav-number">3.1.</span> <span class="nav-text">预表现 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E7%9A%84%E5%A4%9A%E6%80%81%E5%8C%96"><span class="nav-number">3.2.</span> <span class="nav-text">状态的多态化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E7%82%B9"><span class="nav-number">4.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E7%82%B9"><span class="nav-number">4.2.</span> <span class="nav-text">缺点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">4.3.</span> <span class="nav-text">适用场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8D%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">4.4.</span> <span class="nav-text">不适用场景</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%95"><span class="nav-number">5.</span> <span class="nav-text">附录</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">基本介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%A1%88%E7%BB%86%E8%8A%82"><span class="nav-number">2.</span> <span class="nav-text">方案细节</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E5%8F%82%E6%95%B0%E8%BF%98%E6%98%AF%E7%8A%B6%E6%80%81"><span class="nav-number">2.1.</span> <span class="nav-text">同步参数还是状态?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%AC%E5%9C%B0%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E5%8F%91%E9%80%81"><span class="nav-number">2.2.</span> <span class="nav-text">本地玩家数据的发送</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8C%E6%AD%A5%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8E%A5%E6%94%B6"><span class="nav-number">2.3.</span> <span class="nav-text">同步玩家数据的接收</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%82%80%E5%84%A1%E6%8E%A5%E6%94%B6%E7%AB%AF"><span class="nav-number">2.4.</span> <span class="nav-text">傀儡接收端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E4%BF%9D%E6%8C%81"><span class="nav-number">2.5.</span> <span class="nav-text">数据的保持</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%AB%98%E7%BA%A7%E5%8A%9F%E8%83%BD"><span class="nav-number">3.</span> <span class="nav-text">高级功能</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%84%E8%A1%A8%E7%8E%B0"><span class="nav-number">3.1.</span> <span class="nav-text">预表现 </span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%8A%B6%E6%80%81%E7%9A%84%E5%A4%9A%E6%80%81%E5%8C%96"><span class="nav-number">3.2.</span> <span class="nav-text">状态的多态化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%98%E7%82%B9"><span class="nav-number">4.1.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BC%BA%E7%82%B9"><span class="nav-number">4.2.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%E5%BD%95"><span class="nav-number">5.</span> <span class="nav-text">附录</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -237,7 +237,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-06 11:49:21" itemprop="dateModified" datetime="2026-03-06T11:49:21+08:00">2026-03-06</time>
+      <time title="修改时间：2026-03-09 16:17:43" itemprop="dateModified" datetime="2026-03-09T16:17:43+08:00">2026-03-09</time>
     </span>
 
   
@@ -268,14 +268,43 @@
 <p><img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260304210108799.png" alt="image-20260304210108799"></p>
 <p>因此一个比较容易想到的方案是, <strong>将本地正在播放的动画状态及其相关信息同步出去, 其它客户端接受这些信息并在本地通过<code>CrossFade</code>重现动作, 以此达到基本的动画同步效果.</strong> </p>
 <p>然而, 以上只是很理想的表述, 实操中如果直接采用这个方案会带来很多问题, 下面我会说一下基于这个同步方案的详细设计, 以及如何规避掉这些问题让其真正可用.</p>
+<blockquote>
+<p>作者注:</p>
+<p>本文方案的目标是<strong>动画表现同步</strong>，而不是<strong>玩法权威同步</strong>。接收端不参与本地状态决策，只负责消费同步结果。<br>它适合“别人看见你在做什么”的场景，不适合“动画时机直接决定玩法结果”的场景。<br>例如：社交动作、持物表现、非关键交互动作适合；而攻击判定、格斗前摇、受击硬直等不适合直接依赖本文方案。</p>
+</blockquote>
 <hr>
 <h2 id="方案细节"><a href="#方案细节" class="headerlink" title="方案细节"></a>方案细节</h2><h3 id="同步参数还是状态"><a href="#同步参数还是状态" class="headerlink" title="同步参数还是状态?"></a>同步参数还是状态?</h3><p>如果是通过转发消息实现多端同步, 最直观的做法其实是广播本地AnimatorController的状态<strong>参数 (Parameters)</strong>, 并在多端使用同一个AnimatorController执行, 有点类似于帧间同步的思路, 通过维护输入的一致来保证结果的一致.</p>
 <p>这么做本身并没有很大问题, 但考虑到实际情况下的网络延迟, 直接广播参数就不那么可用了 –发送顺序 !&#x3D; 接受顺序, 对于同一个状态机, 参数变化的先后顺序不同可能导致完全不同的结果, 从而使接收端的状态乱掉.</p>
 <p>当然, 通过缓存队列来确保消息顺序可以避免消息时序的问题, 但是Animator执行动画状态本身也需要时间, 接收端很难确定从缓存中取新数据的时机, 这实在太麻烦了!</p>
 <p><img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260304203045997.png" alt="image-20260304203045997"></p>
-<p>相比之下, 广播<strong>状态 (State)</strong> 的方案显得更可靠些. 虽然时序问题仍然存在, 但由于是结果到结果的传递, 不会出现广播参数时”一步错步步错”的情况. 此外, 接收端也不再需要因此考虑动作执行时间, 因为发送端会传递可直接到达的最新状态.</p>
+<p>相比之下, 在不追求严格时间一致性的前提下, 广播<strong>状态 (State)</strong> 的方案显得更可靠些. 虽然时序问题仍然存在, 但由于是结果到结果的传递, 不会出现广播参数时”一步错步步错”的情况. 此外, 接收端也不再需要因此考虑动作执行时间, 因为发送端会传递可直接到达的最新状态.</p>
 <p>不过仅广播状态也有很大的局限性. Mecanim的状态 (State) 还可以持有更复杂的子结构 (如根据速度值进行融合的Idle-Move-Run 混合树) , 它们往往需要另外的数据 (如速度值) 来做出正确的表现.</p>
-<p>因此, 我采用的做法是<strong>同时广播状态Hash (StateNameHash) 和 连续参数 (如控制Move-Run混合的速度参数)</strong> 来达到基础的同步效果, 参见一个如下的数据结构:</p>
+<p>因此, 我采用的做法是<strong>同时广播状态Hash (StateNameHash) 和 连续参数 (如控制Move-Run混合的速度参数)</strong> 来达到基础的同步效果. 注意, 不是所有Animator里的参数都需要同步, 我更建议按如下方式操作:</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>是否建议同步</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>驱动表现的连续参数</td>
+<td>建议同步</td>
+<td>速度、方向、瞄准 pitch、上身权重</td>
+</tr>
+<tr>
+<td>只用于本地决策的离散参数</td>
+<td>通常不要直接同步</td>
+<td>trigger、combo index、局部 bool</td>
+</tr>
+<tr>
+<td>影响状态解释的上下文参数</td>
+<td>按需同步</td>
+<td>武器类型、姿态类型、载具类型</td>
+</tr>
+</tbody></table>
+<p>以下是一段使用Protobuf协议的数据结构参考:</p>
 <figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">[<span class="meta">ProtoContract</span>]</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">BroadcastAnimUpdateData</span> : <span class="title">IReference</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     * Animation Info</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    [<span class="meta">ProtoMember(10)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> StateNameHash;</span><br><span class="line">    </span><br><span class="line">    [<span class="meta">ProtoMember(20)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> StateNormalizedTime;</span><br><span class="line"></span><br><span class="line">    [<span class="meta">ProtoMember(30)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> NextStateNameHash;</span><br><span class="line">    </span><br><span class="line">    [<span class="meta">ProtoMember(40)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">int</span> AnimLayer;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">     * Animator Params</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    [<span class="meta">ProtoMember(300)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> SpeedPerc_XZ;</span><br><span class="line"></span><br><span class="line">    [<span class="meta">ProtoMember(310)</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> SpeedPerc_Y;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>[^注:]: <code>CrossFade</code>API确定一个目标状态至少需要状态(StateNameHash)和层(AnimLayer), 因此它们都要被包含在广播数据中.</p>
@@ -305,6 +334,25 @@
 <p>作为对比, 以下图片展示的是上图状态机的原版 (本地执行版):</p>
 <p><img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305112136528.png" alt="image-20260305112136528"></p>
 <p>将<code>ClipOnly</code>状态机作用于 (本地同步的) 其它客户端玩家, 而带过渡的完整状态机作用于受控的自己玩家, 就可以实现本地玩家执行完整动作逻辑, 而 (本地同步的) 其它客户端玩家 (即接收端) 则相当于成为了一个傀儡: 只根据接收到的数据播放特定的动作状态, 自己没有切换State的能力.</p>
+<table>
+<thead>
+<tr>
+<th>角色</th>
+<th>控制器</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>本地权威玩家</td>
+<td>Full Controller</td>
+<td>响应输入，完整状态决策</td>
+</tr>
+<tr>
+<td>远端表现傀儡</td>
+<td>Puppet &#x2F; ClipOnly Controller</td>
+<td>只消费同步结果，不自行决策</td>
+</tr>
+</tbody></table>
 <p>细心的读者可能发现, 上图我贴的<code>ClipOnly</code>状态机截图并不真的取消了所有过渡. 实际上, 我确实保留了一部分<strong>满足特定条件</strong>的过渡到傀儡状态机上, 让我们随便挑两个看看:</p>
 <img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305113106997.png" alt="image-20260305113106997" style="zoom: 33%;">
 
@@ -382,9 +430,17 @@
 </ol>
 <p>并且很爽的一点在于, 对于同一个State接口 (姑且把同一个State的多个motion实现看做接口-实现的关系), 你不需要写额外的代码去处理它们的替换.</p>
 <hr>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这套代码大概在线上跑了几个月, 基本功能符合预期, 目前没有很多和动作同步相关的Bug汇报 (当然也可能是因为项目目前的DAU不是很高, 一些隐藏的问题或许还没有暴露). 这里我用自己对它的理解做一下优缺点总结.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这套代码大概在线上跑了几个月, 基本功能符合预期, 目前没有很多和动作同步相关的Bug汇报 (当然也可能是因为项目目前的DAU不是很高, 一些隐藏的问题还没有暴露). 这里我用自己对它的理解做一下优缺点总结.</p>
 <p>这套动画同步方案体现了实用主义的设计哲学: 不追求完美的同步效果, 而是在保证基本可用的前提下, 通过简单实现和工具支持, 快速满足项目需求. 对于适合的场景, 这套方案能够以较低的成本提供可用的同步效果. 对于不适合的场景, 则这篇文章可能并非你的受众, 你需要考虑更复杂的同步方案, 如状态同步、帧同步等.</p>
 <p>最重要的是, 在选择同步方案时, 需要根据项目的实际需求、团队的技术能力、开发时间等因素综合考虑. <strong>没有完美的方案, 只有最适合的方案</strong>.</p>
+<p>如果你的项目满足下面几点，这套方案就很值得考虑：</p>
+<ul>
+<li>房间人数少；</li>
+<li>动画主要服务于表现而非判定；</li>
+<li>不希望为动画同步引入复杂服务器状态管理；</li>
+<li>团队更愿意接受“少量误差 + 快速落地”，而不是“严格一致 + 高实现成本”。</li>
+</ul>
+<p>反之，如果动画和玩法判定强耦合，或者项目要求高实时、高公平、高还原，这套方案就不应该作为主方案。</p>
 <h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ul>
 <li><p>实现简单, 快速搭建</p>
 <p>这套方案的核心思路非常直观: 发送端广播当前播放的状态, 接收端通过CrossFade重现. 不需要复杂的帧同步机制, 不需要状态回滚和预测, 也不需要依赖第三方网络同步插件. 对于有一定Unity开发经验的开发者, 可以在几天内完成基础实现.</p>
@@ -409,54 +465,6 @@
 </li>
 <li><p>时间同步精度不足</p>
 <p>对于循环动画 (如Idle、Walk), 这个问题影响不大. 但对于一次性动画 (如攻击、技能), 可能会导致接收端看到的动画进度与发送端不一致.</p>
-</li>
-</ul>
-<h3 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h3><ul>
-<li><p><strong>休闲类游戏:</strong> </p>
-<p>这套方案最适合<strong>休闲类游戏</strong>, 特别是那些对延迟不敏感、更注重社交互动的游戏. 例如:</p>
-<ul>
-<li><p>农场类游戏: 玩家主要进行种植、收获等操作, 动作的精确同步不重要</p>
-</li>
-<li><p>社交类游戏: 玩家更关注其他玩家的存在和基本动作, 而不是精确的动作细节</p>
-</li>
-<li><p>探索类游戏: 玩家在开放世界中探索, 偶尔看到其他玩家的动作即可</p>
-</li>
-</ul>
-</li>
-<li><p><strong>小规模多人游戏:</strong> </p>
-<p>对于<strong>同时在线人数较少</strong> (如2-10人) 的游戏, 这套方案能够提供良好的表现. 因为:</p>
-<ul>
-<li><p>网络流量可控: 每个玩家只需要同步给其他少数几个玩家</p>
-</li>
-<li><p>延迟影响小: 小规模游戏通常使用P2P或小房间服务器, 延迟较低</p>
-</li>
-<li><p>维护成本低: 状态机结构相对简单, 容易维护</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="不适用场景"><a href="#不适用场景" class="headerlink" title="不适用场景"></a>不适用场景</h3><ul>
-<li><p><strong>竞技类游戏:</strong> </p>
-<p>对于<strong>竞技类游戏</strong> (如MOBA、FPS、格斗游戏), 这套方案不适用. 因为:</p>
-<ul>
-<li><p>延迟敏感: 竞技游戏需要精确的同步, 任何延迟都可能导致不公平</p>
-</li>
-<li><p>需要回滚: 竞技游戏通常需要状态回滚和预测机制来处理网络延迟</p>
-</li>
-<li><p>精度要求高: 动作的精确同步直接影响游戏结果</p>
-</li>
-</ul>
-</li>
-<li><p><strong>实时性要求高的游戏:</strong> </p>
-<p>对于<strong>实时性要求高</strong>的游戏 (如音游、节奏游戏), 这套方案不适用. 因为:</p>
-<ul>
-<li><p>时间精度不足: 无法精确同步动画播放进度</p>
-</li>
-<li><p>延迟影响大: 即使很小的延迟也会影响游戏体验</p>
-</li>
-<li><p>需要帧同步: 这类游戏通常需要帧级别的同步</p>
-</li>
-</ul>
 </li>
 </ul>
 <hr>
