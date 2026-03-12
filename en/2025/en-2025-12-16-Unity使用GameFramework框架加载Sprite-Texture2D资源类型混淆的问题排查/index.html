@@ -252,10 +252,7 @@
     
     <div class="post-body" itemprop="articleBody"><p>A couple of days ago, I encountered a peculiar issue: when using the <code>GameEntry.Resource.LoadAssetAsync&lt;T&gt;</code> API from the GameFramework in Unity to load Sprite-type resources, an error indicating a type mismatch occurred, even though the corresponding Sprite file clearly exists:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception: GameFrameworkException: Load asset </span><br><span class="line">&#x27;Assets/Res/UI/UISprite/EnterGamePopup/Achievement/EGP_Achievement_Base_ChineseTraditional.png&#x27; </span><br><span class="line">failure load type is UnityEngine.Texture2D but asset type is UnityEngine.Sprite.</span><br></pre></td></tr></table></figure>
-
-
 <span id="more"></span>
-
 <hr>
 <h2 id="Problem-Analysis"><a href="#Problem-Analysis" class="headerlink" title="Problem Analysis"></a>Problem Analysis</h2><p>At that time, I checked the packaging machine logs and the AB of the finished packages, and found no missing resources. Interestingly, I have three sets of identical logic, but only one of them consistently reports an error, while the other two have never had issues; additionally, everything appears normal in the editor.</p>
 <p>Upon inspecting the Unity project repository, the problematic files are as follows. You can see that Unity has recognized two versions of the same file in one directory, one as a Sprite type (the first one, which relates to your settings in the Inspector and may not necessarily be a Sprite) and the other as a Texture2D type (the second one).</p>
