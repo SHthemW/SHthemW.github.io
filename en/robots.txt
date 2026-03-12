@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: http://shthemw.github.io/sitemap.xml
