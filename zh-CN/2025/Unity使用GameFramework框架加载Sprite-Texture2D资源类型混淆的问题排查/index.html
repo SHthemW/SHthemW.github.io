@@ -23,7 +23,7 @@
     <meta name="description" content="前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 GameEntry.Resource.LoadAssetAsync&lt;T&gt;API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错: 123Exception: GameFrameworkException: Load asset &#x27;Assets&#x2F;Res&#x2F;U">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Unity使用GameFramework框架加载Sprite&#x2F;Texture2D资源类型混淆的问题排查">
-<meta property="og:url" content="http://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/index.html">
+<meta property="og:url" content="https://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/index.html">
 <meta property="og:site_name" content="Welcome to HanWen&#39;s Blog!">
 <meta property="og:description" content="前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 GameEntry.Resource.LoadAssetAsync&lt;T&gt;API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错: 123Exception: GameFrameworkException: Load asset &#x27;Assets&#x2F;Res&#x2F;U">
 <meta property="og:locale" content="zh_CN">
@@ -39,10 +39,10 @@
 <meta name="twitter:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20251216174309645.png">
 
 
-<link rel="canonical" href="http://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
+<link rel="canonical" href="https://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/","path":"zh-CN/2025/Unity使用GameFramework框架加载Sprite-Texture2D资源类型混淆的问题排查/","title":"Unity使用GameFramework框架加载Sprite/Texture2D资源类型混淆的问题排查"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/","path":"zh-CN/2025/Unity使用GameFramework框架加载Sprite-Texture2D资源类型混淆的问题排查/","title":"Unity使用GameFramework框架加载Sprite/Texture2D资源类型混淆的问题排查"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>Unity使用GameFramework框架加载Sprite/Texture2D资源类型混淆的问题排查 | Welcome to HanWen's Blog!</title>
@@ -195,7 +195,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
+    <link itemprop="mainEntityOfPage" href="https://www.shenhanwen.top/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://github.com/SHthemW.png">

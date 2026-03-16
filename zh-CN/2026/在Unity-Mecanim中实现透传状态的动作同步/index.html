@@ -23,7 +23,7 @@
     <meta name="description" content="最近公司上线了一个休闲小游戏, 我操刀了游戏的动画部分, 也在项目里摸索出了一套基础但可用的动作同步方案. 它基于广播状态实现同步, 原理并不复杂. 但所谓适合的才是最好的 —-它对大多数非延迟敏感的小游戏来说都已经够用, 且能在不依赖三方插件的情况下快速搭建, 因此还是想分享一下构建它的思路.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="在Unity Mecanim中实现透传状态的动作同步">
-<meta property="og:url" content="http://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/index.html">
+<meta property="og:url" content="https://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/index.html">
 <meta property="og:site_name" content="Welcome to HanWen&#39;s Blog!">
 <meta property="og:description" content="最近公司上线了一个休闲小游戏, 我操刀了游戏的动画部分, 也在项目里摸索出了一套基础但可用的动作同步方案. 它基于广播状态实现同步, 原理并不复杂. 但所谓适合的才是最好的 —-它对大多数非延迟敏感的小游戏来说都已经够用, 且能在不依赖三方插件的情况下快速搭建, 因此还是想分享一下构建它的思路.">
 <meta property="og:locale" content="zh_CN">
@@ -49,10 +49,10 @@
 <meta name="twitter:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305114052767.png">
 
 
-<link rel="canonical" href="http://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/">
+<link rel="canonical" href="https://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/","path":"zh-CN/2026/在Unity-Mecanim中实现透传状态的动作同步/","title":"在Unity Mecanim中实现透传状态的动作同步"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/","path":"zh-CN/2026/在Unity-Mecanim中实现透传状态的动作同步/","title":"在Unity Mecanim中实现透传状态的动作同步"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>在Unity Mecanim中实现透传状态的动作同步 | Welcome to HanWen's Blog!</title>
@@ -205,7 +205,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/">
+    <link itemprop="mainEntityOfPage" href="https://www.shenhanwen.top/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://github.com/SHthemW.png">

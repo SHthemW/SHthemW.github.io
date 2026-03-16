@@ -23,7 +23,7 @@
     <meta name="description" content="软件在真机上Crash后, 我们往往不能直接得到错误日志, 因此通常需要借助第三方工具来实现对日志的抓取和分析. 本文记录一次Unity游戏在安卓环境下频繁闪退的Debug过程, 使用Android Studio 2025.1.4.8进行日志抓取.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Android Studio真机调试分析闪退原因">
-<meta property="og:url" content="http://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/index.html">
+<meta property="og:url" content="https://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/index.html">
 <meta property="og:site_name" content="Welcome to HanWen&#39;s Blog!">
 <meta property="og:description" content="软件在真机上Crash后, 我们往往不能直接得到错误日志, 因此通常需要借助第三方工具来实现对日志的抓取和分析. 本文记录一次Unity游戏在安卓环境下频繁闪退的Debug过程, 使用Android Studio 2025.1.4.8进行日志抓取.">
 <meta property="og:locale" content="zh_CN">
@@ -50,10 +50,10 @@
 <meta name="twitter:image" content="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/Screenshot_2025-10-20-19-40-07-064_com.android.se.jpg">
 
 
-<link rel="canonical" href="http://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/">
+<link rel="canonical" href="https://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/","path":"zh-CN/2025/使用Android-Studio真机调试分析闪退原因/","title":"使用Android Studio真机调试分析闪退原因"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/","path":"zh-CN/2025/使用Android-Studio真机调试分析闪退原因/","title":"使用Android Studio真机调试分析闪退原因"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>使用Android Studio真机调试分析闪退原因 | Welcome to HanWen's Blog!</title>
@@ -206,7 +206,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/">
+    <link itemprop="mainEntityOfPage" href="https://www.shenhanwen.top/zh-CN/2025/%E4%BD%BF%E7%94%A8Android-Studio%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E9%97%AA%E9%80%80%E5%8E%9F%E5%9B%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://github.com/SHthemW.png">
