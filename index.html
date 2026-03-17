@@ -243,8 +243,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>最近公司上线了一个休闲小游戏, 我操刀了游戏的动画部分, 也在项目里摸索出了一套基础但可用的动作同步方案. 它基于广播状态实现同步, 原理并不复杂. 但所谓适合的才是最好的 —-它对大多数非延迟敏感的小游戏来说都已经够用, 且能在不依赖三方插件的情况下快速搭建, 因此还是想分享一下构建它的思路.</p>
-<img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305114052767.png" alt="image-20260305114052767" style="zoom:33%;">
+          <p>最近公司上线了一个休闲小游戏, 我操刀了游戏的动画部分, 也在项目里摸索出了一套基础但可用的动作同步方案. 它基于广播状态实现同步, 原理并不复杂. 但所谓适合的才是最好的 ——它对大多数非延迟敏感的小游戏来说都已经够用, 且能在不依赖三方插件的情况下快速搭建, 因此还是想分享一下构建它的思路.</p>
+<p><img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/image-20260305114052767.png" alt="image-20260305114052767" style="zoom:33%;"></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/zh-CN/2026/%E5%9C%A8Unity-Mecanim%E4%B8%AD%E5%AE%9E%E7%8E%B0%E9%80%8F%E4%BC%A0%E7%8A%B6%E6%80%81%E7%9A%84%E5%8A%A8%E4%BD%9C%E5%90%8C%E6%AD%A5/#more" rel="contents">
@@ -327,8 +327,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 <code>GameEntry.Resource.LoadAssetAsync&lt;T&gt;</code>API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception: GameFrameworkException: Load asset </span><br><span class="line">&#x27;Assets/Res/UI/UISprite/EnterGamePopup/Achievement/EGP_Achievement_Base_ChineseTraditional.png&#x27; </span><br><span class="line">failure load type is UnityEngine.Texture2D but asset type is UnityEngine.Sprite.</span><br></pre></td></tr></table></figure>
+          <p>前两天发现一个邪门的事情, Unity引擎使用GameFramework框架的 <code>GameEntry.Resource.LoadAssetAsync&lt;T&gt;</code>API加载Sprite类型的资源, 在对应Sprite文件明明存在的情况下却给一个类型不匹配的报错:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Exception: GameFrameworkException: Load asset </span><br><span class="line">&#x27;Assets/Res/UI/UISprite/EnterGamePopup/Achievement/EGP_Achievement_Base_ChineseTraditional.png&#x27; </span><br><span class="line">failure load type is UnityEngine.Texture2D but asset type is UnityEngine.Sprite.</span><br></pre></td></tr></table></figure></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/zh-CN/2025/Unity%E4%BD%BF%E7%94%A8GameFramework%E6%A1%86%E6%9E%B6%E5%8A%A0%E8%BD%BDSprite-Texture2D%E8%B5%84%E6%BA%90%E7%B1%BB%E5%9E%8B%E6%B7%B7%E6%B7%86%E7%9A%84%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5/#more" rel="contents">
@@ -500,7 +499,7 @@
 <p>感谢点赞收藏的朋友们!   </p>
 </blockquote>
 <p>想象一座带有桥洞的小桥. 玩家先从左侧上桥, 再从右侧下桥, 最后从中间的桥洞走过去.</p>
-<p>这是一个很简单, 很常见的场景. 然而, 要在2D top-down视角的游戏中实现它却比想象中更复杂 –在桥上阻挡玩家跳下去的碰撞盒, 要如何才不会阻挡要穿过桥洞的玩家?</p>
+<p>这是一个很简单, 很常见的场景. 然而, 要在2D top-down视角的游戏中实现它却比想象中更复杂 —在桥上阻挡玩家跳下去的碰撞盒, 要如何才不会阻挡要穿过桥洞的玩家?</p>
 <p><img src="https://raw.githubusercontent.com/SHthemW/Blog.Images/master/s6.png" alt="好吧这两个数字可能被压的太扁了"></p>
           <!--noindex-->
             <div class="post-button">
